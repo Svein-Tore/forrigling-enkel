@@ -47,16 +47,14 @@
             }
 	    #plasser {
 		    position:absolute;
-		    left:-100px;
-		    top:-50px;
-		}	    
+	   }	    
         </style>
 
     
 </head>
 
     <body>
- 
+    <div id="plasser>
 	    <ni-web-application location="BROWSER" engine="VIREO" vireo-source="index.via.txt" wasm-url="ni-webvi-resource-v0/node_modules/vireo/dist/wasm32-unknown-emscripten/release/vireo.core.wasm"><ni-virtual-instrument vi-name="WebApp::index.gviweb"></ni-virtual-instrument></ni-web-application>
         <div id="ni-outdated-browser-message" style="display:none">This browser is missing features needed to run this web application. Open this web application in a supported browser.</div>
         <div id="ni-failed-to-load-vireo-source" style="display:none">
@@ -85,7 +83,8 @@
             <ni-label class='ni-hidden' control-resize-mode='fixed' label-alignment='top-left' ni-control-id='16' text='LED_2'></ni-label>
         </ni-front-panel>
         </div>
-	    <P id="varmeovn_tekst">Varmeovn<p/> 
+	    <P id="varmeovn_tekst">Varmeovn<p/>
+	</div>
     </body>
 
 </html>
